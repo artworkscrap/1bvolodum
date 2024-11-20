@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discografia Olodum</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #121212, #2c2c2c);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+a {
+color: lime;
+}
+
+.BotãoNormal {
+	background-color:#ffcc00;
+	border-radius:42px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.BotãoNormal:hover {
+	background-color:#ffffff;
+}
+.BotãoNormal:active {
+	position:relative;
+	top:1px;
+}
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #ffcc00;
+    }
+
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    /* Animação de entrada */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .album {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      background: radial-gradient(circle, #333 60%, #000);
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .album img {
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      width: 70%;
+      height: 70%;
+      border-radius: 50%;
+    }
+
+    /* Animação ao passar o mouse */
+    .album:hover {
+      transform: scale(1.1) rotate(15deg);
+      box-shadow: 0 6px 15px rgba(255, 204, 0, 0.8);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #ccc;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+<h1>Discografia</h1>
+    <h2>5 discos mais importantes do Olodum</h2>
+  </header>
+
+  <section class="albums">
+    <!-- Insira os álbuns abaixo -->
+    <div class="album">
+      <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/1/a/9/1/625221519823715.jpg" alt="Álbum 1">
+    </div>
+<p>Egito Madagascar (1987) - <a href="https://open.spotify.com/intl-pt/album/1zESaJnhh9yx0sIp88Iaut">Ouvir no Spotify</a><p>
+
+    <div class="album">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPzMe2m3bA45FgPwvHz4PrwVrGdDDJoKMYow&s" alt="Álbum 2">
+    </div>
+<p>Do Nordeste do Saara ao Nordeste Brasileiro (1989) - <a href="https://open.spotify.com/intl-pt/album/6WhxYPSWucdDKHYGTbd5t6">Ouvir no Spotify</a><p>
+
+    <div class="album">
+      <img src="https://i.scdn.co/image/ab67616d00001e02286a1a2e0d44ac6fdf749af0" alt="Álbum 3">
+    </div>
+<p>A Música do Olodum (1992) - <a href="https://open.spotify.com/intl-pt/album/7lFxuWjTe0JxXka9tjzGXm">Ouvir no Spotify</a><p>
+
+
+    <div class="album">
+      <img src="https://i.scdn.co/image/ab67616d0000b273ddef673cc197f15b0b9f544f" alt="Álbum 4">
+    </div>
+<p>The Best of Olodum (1997) - <a href="https://open.spotify.com/intl-pt/album/0AjkPFHjcbtMakNau08XdK">Ouvir no Spotify</a><p>
+
+
+    <div class="album">
+      <img src="https://cdns-images.dzcdn.net/images/cover/74c596c64bb2e78fd4d92463b32517f8/0x1900-000000-80-0-0.jpg" alt="Álbum 5">
+    </div>
+<p>Olodum Pela Vida (2002) - <a href="https://open.spotify.com/intl-pt/album/5VWAPdv77bnHBLAR6XIBX8">Ouvir no Spotify</a><p>
+
+    <!-- Adicione mais álbuns duplicando o código acima -->
+  </section>
+<a href="index.html" class="BotãoNormal">Voltar</a>
+  <footer>
+    <p>&copy; 2024 Olodum - Ritmo e Cultura</p>
+  </footer>
+</body>
+</html>
